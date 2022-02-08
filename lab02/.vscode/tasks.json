@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "gradle",
+			"id": "/home/promethaes/csci2020u/lab02app:buildlab02",
+			"script": "app:build",
+			"description": "Assembles and tests this project.",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"project": "lab02",
+			"buildFile": "/home/promethaes/csci2020u/lab02/build.gradle",
+			"rootProject": "lab02",
+			"projectFolder": "/home/promethaes/csci2020u/lab02",
+			"workspaceFolder": "/home/promethaes/csci2020u/lab02",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: app:build"
+		}
+	]
+}

@@ -3,12 +3,10 @@
  */
 package lab02;
 
+  
 public class App {
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello World! AGAIN!!";
     }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-    }
 }

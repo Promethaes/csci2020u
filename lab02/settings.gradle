@@ -9,3 +9,4 @@
 
 rootProject.name = 'lab02'
 include('app')
+include('CSVDemo.class')
