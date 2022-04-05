@@ -1,7 +1,6 @@
 package com.assignment.assignment2;
 
 import java.io.*;
-import java.sql.DatabaseMetaData;
 import java.util.ArrayList;
 
 import org.apache.commons.csv.*;
@@ -83,7 +82,6 @@ class CsvReader {
                 }
                 DataBase.AppendColumn(rowData.get(0).get(j), list);
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
