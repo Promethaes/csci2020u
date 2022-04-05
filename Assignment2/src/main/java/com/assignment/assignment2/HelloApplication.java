@@ -15,6 +15,9 @@ public class HelloApplication extends Application {
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
+
+        CsvReader reader = new CsvReader();
+        reader.readFromFile("airline_safety.csv");
     }
 
     public static void main(String[] args) {
