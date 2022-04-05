@@ -1,40 +1,42 @@
 package com.assignment.assignment2;
 
+import java.util.ArrayList;
+
 public class FileProcessor {
-    public static int GetAverage(int[] values){
-        if(values.length == 0)
+    public static Integer GetAverage(ArrayList<Integer> values){
+        if(values.size() == 0)
             return -1;
 
-        int output = 0;
-        for(int i = 0; i < values.length;i++){
-            output += values[i];
+        Integer output = 0;
+        for(int i = 0; i < values.size();i++){
+            output += values.get(i);
         }
-        output /= values.length;
+        output /= values.size();
 
         return output;
     }
 
-    public static int GetMaximum(int[] values){
-        if(values.length == 0)
+    public static Integer GetMaximum(ArrayList<Integer> values){
+        if(values.size() == 0)
             return -1;
 
-        int temp = -99999;
-        for(int i = 0; i < values.length;i++){
-            if(values[i] > temp)
-                temp = values[i];
+        Integer temp = -99999;
+        for(int i = 0; i < values.size();i++){
+            if(values.get(i) > temp)
+                temp = values.get(i);
         }
 
         return temp;
     }
 
-    public static int GetMinimum(int[] values){
-        if(values.length == 0)
+    public static int GetMinimum(ArrayList<Integer> values){
+        if(values.size() == 0)
             return -1;
 
         int temp = 999999;
-        for(int i = 0; i < values.length;i++){
-            if(values[i] < temp)
-                temp = values[i];
+        for(int i = 0; i < values.size();i++){
+            if(values.get(i) < temp)
+                temp = values.get(i);
         }
 
         return temp;

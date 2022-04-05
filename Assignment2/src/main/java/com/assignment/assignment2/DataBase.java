@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class DataBase {
     //first row is column names
-    public static ArrayList<ArrayList<String>> data;
+    public static ArrayList<ArrayList<String>> data = new ArrayList<ArrayList<String>>();
     
     public static void AppendColumn(String name, ArrayList<String> inData){
         data.get(0).add(name);
