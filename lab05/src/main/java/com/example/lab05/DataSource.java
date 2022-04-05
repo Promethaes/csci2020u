@@ -4,6 +4,8 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 public class DataSource {
+    public static ObservableList<StudentRecord> currentData = FXCollections.observableArrayList();
+
     public static ObservableList<StudentRecord> getAllMarks() {
         ObservableList<StudentRecord> marks =
                 FXCollections.observableArrayList();
